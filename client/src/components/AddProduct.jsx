@@ -199,16 +199,16 @@ const AddProduct = ({ onClose }) => {
                                     סוג ספר תורה 
                                 </InputLabel>
                                 <Select
-                                    name="scriptType"
-                                    value={formData.scriptType}
+                                    name="scrollType"
+                                    value={formData.scrollType}
                                     onChange={handleChange}
                                     required
                                     sx={{
                                         fontFamily: 'Roboto, sans-serif',
                                     }}
                                 >
-                                    <MenuItem value="בית יוסף">שורות 11</MenuItem>
-                                    <MenuItem value="ספרדי">ספרדי</MenuItem>
+                                    <MenuItem value="המלך">המלך</MenuItem>
+                                    <MenuItem value="11 שורות">שורות 11</MenuItem>
                                 </Select>
                             </FormControl>
                         </Grid>
