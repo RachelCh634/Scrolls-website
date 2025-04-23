@@ -53,7 +53,6 @@ async function refreshToken(oAuth2Client, token) {
     }
 }
 
-
 async function getNewToken(oAuth2Client) {
     const authUrl = oAuth2Client.generateAuthUrl({
         access_type: 'offline',
@@ -67,7 +66,7 @@ async function getNewToken(oAuth2Client) {
         oAuth2Client.setCredentials(tokens);
         const tokenData = {
             access_token: tokens.access_token,
-            refresh_token: tokens.refresh_token,
+            refresh_token: tokens.refresh_token || token.refresh_token,
             expiry_date: tokens.expiry_date
         };
         fs.writeFileSync(TOKEN_PATH, JSON.stringify(tokenData));
