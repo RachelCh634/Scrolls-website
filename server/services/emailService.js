@@ -49,7 +49,7 @@ async function refreshToken(oAuth2Client, token) {
         console.log('✅ Token refreshed successfully!');
         oAuth2Client.setCredentials(newToken);
     } catch (err) {
-        console.error('❌ Error refreshing token:', err);
+        console.error('❌ Error refreshing token:', err.code || err.message || 'Unknown error');
     }
 }
 
@@ -74,7 +74,7 @@ async function getNewToken(oAuth2Client) {
         console.log('Token saved successfully!');
         return oAuth2Client;
     } catch (err) {
-        throw new Error('Error retrieving access token: ' + err.message);
+        console.error('❌ Error retrieving access token:', err.code || err.message || 'Unknown error');
     }
 }
 
