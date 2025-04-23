@@ -59,6 +59,7 @@ async function getNewToken(oAuth2Client) {
         prompt: 'consent',
         scope: SCOPES_SEND
     });
+    token = JSON.parse(fs.readFileSync(TOKEN_PATH));
     console.log('Authorize this app by visiting this URL:', authUrl);
     const code = readline.question('Enter the code from the page: ');
     try {
