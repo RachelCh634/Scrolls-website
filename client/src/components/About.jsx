@@ -95,7 +95,7 @@ export default function About() {
             backgroundSize: 'contain',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            borderRadius: '15px',
+            borderRadius: '16px',
           }} />
 
           <Link to="/products" style={{ textDecoration: 'none' }}>
