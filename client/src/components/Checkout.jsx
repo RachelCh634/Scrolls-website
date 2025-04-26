@@ -18,6 +18,7 @@ import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import image from '../assets/Contact.jpg';
 import { createGlobalStyle } from 'styled-components';
+import { Helmet } from 'react-helmet';
 
 const steps = ['פרטי המוצר', 'תשלום', 'סיום'];
 
@@ -104,7 +105,10 @@ export default function Checkout() {
 
     return (
         <>
-         <GlobalStyle />
+            <Helmet>
+                <meta name="robots" content="noindex" />
+            </Helmet>
+            <GlobalStyle />
             <Box sx={{
                 position: 'relative',
                 minHeight: '100vh',
@@ -171,7 +175,7 @@ export default function Checkout() {
                             px: { xs: 2, sm: 10 },
                             gap: { xs: 4, md: 8 },
                             overflow: 'hidden',
-                            marginRight: { 
+                            marginRight: {
                                 xs: 'auto',
                                 sm: 'auto',
                                 md: '450px'

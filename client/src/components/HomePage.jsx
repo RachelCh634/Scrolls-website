@@ -6,6 +6,7 @@ import About from './About';
 import Contact from './Contact';
 import { createGlobalStyle } from 'styled-components';
 import { useScroll } from '../context/ScrollContext';
+import { Helmet } from 'react-helmet';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -31,6 +32,18 @@ const HomePage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>לוח המגילות והסת"ם</title>
+        <meta name="description" content='מיזם ייחודי לפרסום מגילות אסתר ושאר כתבי סת"ם. לוח מקצועי וייעודי לחשיפה רחבה ואיכותית. הכנסו עכשיו והתרשמו מהמבחר המוביל בתחום הסת"ם!' />
+
+        <meta property="og:title" content='לוח המגילות והסת"ם' />
+        <meta property="og:description" content='מיזם ייחודי לפרסום מגילות אסתר ושאר כתבי סת"ם. לוח מקצועי וייעודי לחשיפה רחבה ואיכותית.' />
+        <meta property="og:image" content="/Logo.png" />
+        <meta property="og:url" content={'https://scrolls-website.vercel.app/'} />
+        <meta property="og:type" content="website" />
+
+        <meta name="google-site-verification" content="NSC5w-5cvS47f49us6gvzzN5NyWJkHNSd7anNlI6OPQ" />
+      </Helmet>
       <GlobalStyle />
       <div
         className="relative"
@@ -89,11 +102,11 @@ const HomePage = () => {
               </div>
             </div>
             <div style={{ color: "#5A3B41", fontSize: '1.3rem', marginRight: "4%", marginTop: "10%", lineHeight: '120%' }}>
-              <span style={{marginLeft: '-2%'}}>בלוח המגילות תמצאו בקלות ובנוחות</span>
-              <br/>
+              <span style={{ marginLeft: '-2%' }}>בלוח המגילות תמצאו בקלות ובנוחות</span>
+              <br />
               <span>,</span>
               <span>מגילות אסתר כלבבכם</span>
-              <br/>
+              <br />
               <span>.</span>
               <span style={{ fontWeight: "bolder" }}>באיכות ובהידור שאתם מחפשים</span>
             </div>

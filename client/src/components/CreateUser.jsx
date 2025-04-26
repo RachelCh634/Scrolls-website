@@ -18,6 +18,8 @@ import { useNavigate } from 'react-router-dom';
 import CloseIcon from '@mui/icons-material/Close';
 import { setUser } from '../redux/userSlice';
 import { useDispatch } from 'react-redux';
+import { Helmet } from 'react-helmet';
+
 
 const CreateUser = ({ open, onClose }) => {
   const theme = useTheme();
@@ -157,6 +159,9 @@ const CreateUser = ({ open, onClose }) => {
 
   return (
     <>
+      <Helmet>
+        <meta name="robots" content="noindex" />
+      </Helmet>
       <Dialog
         open={open}
         onClose={onClose}

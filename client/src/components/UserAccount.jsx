@@ -12,7 +12,7 @@ import { deleteUser, deleteUserProducts, logout } from '../redux/userSlice';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-
+import { Helmet } from 'react-helmet';
 
 
 export default function UserAccount({ open, onClose }) {
@@ -53,6 +53,9 @@ export default function UserAccount({ open, onClose }) {
 
   return (
     <>
+      <Helmet>
+        <meta name="robots" content="noindex" />
+      </Helmet>
       <Modal open={open} onClose={onClose} aria-labelledby="user-account-modal">
         <Box
           sx={{

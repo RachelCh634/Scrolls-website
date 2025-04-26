@@ -4,6 +4,7 @@ import background from '../assets/AboutOur.jpg';
 import image from '../assets/About.jpg';
 import { Link } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
+import { Helmet } from 'react-helmet';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -25,6 +26,9 @@ export default function About() {
 
   return (
     <>
+      <Helmet>
+        <meta name="robots" content="noindex" />
+      </Helmet>
       <GlobalStyle />
       <Box sx={{
         direction: 'rtl',
@@ -34,7 +38,7 @@ export default function About() {
         width: "100vw",
         display: 'flex',
         alignItems: 'center',
-        marginLeft: '-8px',  
+        marginLeft: '-8px',
         marginRight: '-8px',
         flexDirection: isMobile ? 'column' : 'row',
         justifyContent: isMobile ? 'center' : 'flex-start',
@@ -83,7 +87,7 @@ export default function About() {
           >
             אז מי אנחנו?
           </Typography>
-          
+
           <Box sx={{
             width: '100%',
             height: isMobile ? '200px' : '250px',
@@ -93,7 +97,7 @@ export default function About() {
             backgroundRepeat: 'no-repeat',
             borderRadius: '15px',
           }} />
-          
+
           <Link to="/products" style={{ textDecoration: 'none' }}>
             <Button
               variant="contained"
@@ -136,8 +140,8 @@ export default function About() {
           בלוח המגילות תמצאו בקלות ובנוחות מגילת אסתר כלבבכם, מתוך מגוון ענק של כל סוגי מגילות אסתר ולפי כל המנהגים, בטווח מחירים גדול, ובאיכות ובהידור שאתם מחפשים,<br />
           בלוח המגילות מפרסמים טובי הסופרים את היצירות שלהם,<br />
           הלוח מפנה אותך באופן ישיר אל הסופר, בכך תוכל להתרשם מהסופר באופן אישי ולשמוע את כל הפרטים על המגילה שלו, על רמת ההידור וההקפדה החל מבחירת הקלף הדיו והכתיבה עצמה, וכלה בהגהה ותיקון.<br />
-          <span style={{ 
-            fontWeight: 'bold', 
+          <span style={{
+            fontWeight: 'bold',
             color: 'rgba(90, 59, 65, 1)',
             display: 'block',
             marginTop: isMobile ? '10px' : '0'

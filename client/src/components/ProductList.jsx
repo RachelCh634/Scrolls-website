@@ -10,6 +10,7 @@ import AddIcon from '@mui/icons-material/Add';
 import { useSelector } from 'react-redux';
 import background from '../assets/About.jpg';
 import { createGlobalStyle } from 'styled-components';
+import { Helmet } from 'react-helmet';
 
 const GlobalStyle = createGlobalStyle`
   body, html {
@@ -54,6 +55,9 @@ const ProductList = () => {
 
   return (
     <>
+      <Helmet>
+        <meta name="robots" content="noindex" />
+      </Helmet>
       <GlobalStyle />
       <Box
         sx={{
@@ -70,7 +74,7 @@ const ProductList = () => {
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
           position: 'relative',
-          overflow: 'hidden', 
+          overflow: 'hidden',
         }}
       >
 

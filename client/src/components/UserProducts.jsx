@@ -8,6 +8,7 @@ import { createGlobalStyle } from 'styled-components';
 import background from '../assets/About.jpg';
 import { useNavigate } from 'react-router-dom';
 import AddIcon from '@mui/icons-material/Add';
+import { Helmet } from 'react-helmet';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -73,6 +74,9 @@ const UserProducts = () => {
 
     return (
         <>
+            <Helmet>
+                <meta name="robots" content="noindex" />
+            </Helmet>
             <GlobalStyle />
             <Box
                 sx={{
