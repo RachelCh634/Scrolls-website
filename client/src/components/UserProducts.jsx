@@ -5,7 +5,7 @@ import EditProductModal from './EditProductModal';
 import { Box, Grid, Typography, useMediaQuery, useTheme, CircularProgress, Button } from '@mui/material';
 import { Scroll } from 'lucide-react';
 import { createGlobalStyle } from 'styled-components';
-import background from '../assets/About.png';
+import background from '../assets/About.jpg';
 import { useNavigate } from 'react-router-dom';
 import AddIcon from '@mui/icons-material/Add';
 

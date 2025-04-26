@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Box, Container, Button, Typography, useTheme, useMediaQuery } from '@mui/material';
-import background from '../assets/AboutOur.jfif';
-import image from '../assets/About.png';
+import background from '../assets/AboutOur.jpg';
+import image from '../assets/About.jpg';
 import { Link } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 

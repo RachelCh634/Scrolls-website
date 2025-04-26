@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 import NedarimPayment from './NedarimPayment';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
-import image from '../assets/Contact.png';
+import image from '../assets/Contact.jpg';
 import { createGlobalStyle } from 'styled-components';
 
 const steps = ['פרטי המוצר', 'תשלום', 'סיום'];

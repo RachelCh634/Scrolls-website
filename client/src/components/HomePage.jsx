@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import Button from '@mui/material/Button';
 import LoginDialog from './LoginDialog';
-import background from '../assets/Bacg.png';
+import background from '../assets/Bacg.jpg';
 import About from './About';
 import Contact from './Contact';
 import { createGlobalStyle } from 'styled-components';

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import backgroundImage from '../assets/Contact.png';
+import backgroundImage from '../assets/Contact.jpg';
 import { Typography, Snackbar, Alert } from '@mui/material';
 import { createGlobalStyle } from 'styled-components';
 
@@ -41,7 +41,7 @@ export default function Contact() {
             return;  // אם יש שדה חסר, לא נמשיך לשלוח
         }
 
-        setIsSubmitting(true);  // מתחילים לשלוח, כפתור יהיה דיסאייבל
+        setIsSubmitting(true);  
         console.log(formData);
         try {
             const response = await fetch('https://scrolls-website.onrender.com/usersApi/contactUs', {

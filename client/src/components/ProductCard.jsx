@@ -5,7 +5,7 @@ import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 import SellOutlinedIcon from '@mui/icons-material/SellOutlined';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import LocationCityOutlinedIcon from '@mui/icons-material/LocationCityOutlined';
-import cardImage from '../assets/Card.png';
+import cardImage from '../assets/Card.jpg';
 
 const ProductCard = ({ product, onOpenModal }) => {
   const typographyStyle = {

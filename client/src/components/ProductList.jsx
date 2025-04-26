@@ -8,7 +8,7 @@ import FilterComponent from './FilterComponent';
 import { Alert, Box, CircularProgress, Snackbar } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import { useSelector } from 'react-redux';
-import background from '../assets/About.png';
+import background from '../assets/About.jpg';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`

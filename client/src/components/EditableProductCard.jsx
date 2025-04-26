@@ -6,7 +6,7 @@ import StickyNote2OutlinedIcon from '@mui/icons-material/StickyNote2Outlined';
 import SellOutlinedIcon from '@mui/icons-material/SellOutlined';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
-import cardImage from '../assets/Card.png';
+import cardImage from '../assets/Card.jpg';
 
 const EditableProductCard = ({ product, onOpenEditModal, onDelete }) => {
   const [openDialog, setOpenDialog] = React.useState(false);
