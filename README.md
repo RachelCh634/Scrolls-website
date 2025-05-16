@@ -1,4 +1,3 @@
-### Website under construction, please be patient :rocket:
 #### Website construction project for a client :smile:
 
 Website selling the Scrolls of Esther, Mezuzahs and other products.
